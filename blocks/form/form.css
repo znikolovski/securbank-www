@@ -1,6 +1,6 @@
 :root {
     --error-color: #ff5f3f;
-    --form-color: #07639d;
+    --form-color: #0296A6;
 }
 
 main .form {
@@ -204,7 +204,7 @@ main .form .button {
   
   @media (min-width: 1200px) {
     .form-container {
-        max-width: 1140px;
+        max-width: 1280px;
     }
     .form-fieldset-wrapper { 
         grid-template-columns: 1fr 1fr;

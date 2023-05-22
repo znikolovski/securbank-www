@@ -103,11 +103,14 @@ export default async function decorate(block) {
     nav.id = 'nav';
     nav.innerHTML = html;
 
-    const classes = ['brand', 'sections', 'tools'];
+    const classes = ['announcements','brand', 'sections', 'tools'];
     classes.forEach((c, i) => {
       const section = nav.children[i];
       if (section) section.classList.add(`nav-${c}`);
     });
+
+    const announcements = nav.querySelector('.nav-announcements');
+    announcements.parentNode.removeChild(announcements);
 
     const navSections = nav.querySelector('.nav-sections');
     if (navSections) {
@@ -137,9 +140,15 @@ export default async function decorate(block) {
     isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
     decorateIcons(nav);
+    const announcementWrapper = document.createElement('div');
+    announcementWrapper.className = 'announcement-wrapper';
+    announcementWrapper.append(announcements);
+ 
+
     const navWrapper = document.createElement('div');
     navWrapper.className = 'nav-wrapper';
-    navWrapper.append(nav);
+    navWrapper.append(announcementWrapper);
+      navWrapper.append(nav);
     block.append(navWrapper);
   }
 }

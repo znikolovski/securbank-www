@@ -1,9 +1,10 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #fff;
   width: 100%;
   z-index: 2;
   position: fixed;
+  border-bottom: 1px solid var(--highlight-background-color);
 }
 
 header nav {
@@ -33,6 +34,7 @@ header nav[aria-expanded="true"] {
 @media (min-width: 600px) {
   header nav {
     padding: 0 2rem;
+    margin: 18px auto;
   }
 }
 
@@ -172,6 +174,7 @@ header nav .nav-sections ul  {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  justify-content: end;
 }
 
 header nav .nav-sections ul > li {
@@ -272,4 +275,20 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+
+header .announcement-wrapper {
+  background-color: #171C28;
+  min-height: 40px;
+  
+}
+
+header .announcement-wrapper p {
+  max-width: 1200px;
+  margin: auto;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  padding: 7px;
 }

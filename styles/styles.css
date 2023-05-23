@@ -246,3 +246,16 @@ main .section {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+.default-content-wrapper h2 {
+  text-align: center;
+}
+/* main .section:has(.default-content-wrapper) img{
+  width: 620px;
+
+}
+
+main .section:has(.default-content-wrapper):nth-last-of-type(odd)  {
+
+  background-color: #F3F2F6;
+} */

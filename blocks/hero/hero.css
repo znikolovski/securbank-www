@@ -16,10 +16,30 @@ main .hero {
 
 main .hero h1 {
   max-width: 1280px;
+  margin-top: 106px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  color: white;
+  font: normal normal normal 48px/52px Adobe Clean;
+}
+
+main .hero h2 {
+  max-width: 1280px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   color: white;
+  font: normal normal 900 48px/52px Adobe Clean;
 }
+
+main .hero p {
+  max-width: 1280px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+ }
 
 main .hero picture {
   position: absolute;

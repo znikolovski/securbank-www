@@ -39,7 +39,7 @@
 .fullwidth > ul > li {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   border:none;
   height: 500px;
 }
@@ -47,7 +47,7 @@
 
 
 .fullwidth > ul > li:nth-child(even) {
-
+  background-color: #F3F2F6;
   flex-direction: row-reverse;
 }
 
@@ -58,7 +58,13 @@
 
 
 .fullwidth .cards-card-body {
+  width: 660px;
   margin: 0px;
+  margin-top: 50px;
+}
+
+.fullwidth > ul > li:nth-child(odd) .cards-card-body{
+  padding-left: 150px;
 }
 
 .fullwidth .cards-card-body h3 {
@@ -71,6 +77,7 @@
   line-height: 24px;
   font-weight: 700;
   font-family: adobe-clean, sans-serif;
+  base
 }
 
 .fullwidth .cards-card-body ul li::before {
@@ -82,6 +89,11 @@
     margin-left: -1em}
 
 .fullwidth .cards-card-image {
+    padding-top: 100px;
+    width: 620px;
+}
 
-
+.cards-wrapper:has(.fullwidth) {
+  margin: unset;
+  max-width: 100%;
 }

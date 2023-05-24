@@ -64,6 +64,7 @@ main .hero picture:after {
 
 main .hero img {
   object-fit: cover;
+  object-position: 0 -250px;
   width: 100%;
   height: 100%;
 }

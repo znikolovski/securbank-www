@@ -44,6 +44,8 @@
   height: 500px;
 }
 
+
+
 .fullwidth > ul > li:nth-child(even) {
 
   flex-direction: row-reverse;
@@ -62,6 +64,22 @@
 .fullwidth .cards-card-body h3 {
   font-size: 36px;
 }
+
+.fullwidth .cards-card-body ul li{
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: adobe-clean, sans-serif;
+}
+
+.fullwidth .cards-card-body ul li::before {
+    content: "•"; 
+    color: #0296A6;
+    font-size: 48px;
+    line-height: 24px;
+    display: inline-block; width: 1em;
+    margin-left: -1em}
 
 .fullwidth .cards-card-image {
 

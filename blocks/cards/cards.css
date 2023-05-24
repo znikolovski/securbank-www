@@ -61,6 +61,7 @@
   width: 660px;
   margin: 0px;
   margin-top: 50px;
+  box-sizing: border-box;
 }
 
 .fullwidth > ul > li:nth-child(odd) .cards-card-body{

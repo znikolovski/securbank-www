@@ -29,3 +29,41 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+
+.fullwidth ul {
+  display: block;
+
+}
+
+.fullwidth > ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border:none;
+  height: 500px;
+}
+
+.fullwidth > ul > li:nth-child(even) {
+
+  flex-direction: row-reverse;
+}
+
+.fullwidth ul li picture img {
+  width: 620px;
+  aspect-ratio: 16/7;
+}
+
+
+.fullwidth .cards-card-body {
+  margin: 0px;
+}
+
+.fullwidth .cards-card-body h3 {
+  font-size: 36px;
+}
+
+.fullwidth .cards-card-image {
+
+
+}

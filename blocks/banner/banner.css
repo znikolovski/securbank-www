@@ -40,8 +40,18 @@
     max-width: 1280px;
     margin: auto;
     color: #fff;
-    padding: 100px 0px;
+    padding: 100px 20px;
   }
+
+  @media (min-width: 960px) {
+    .banner-text {
+      max-width: 1280px;
+      margin: auto;
+      color: #fff;
+      padding: 100px 0px;
+    }
+  }
+
   .banner-text p {
     margin: 0;
   }

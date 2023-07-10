@@ -23,7 +23,7 @@ export default async function decorate(block) {
     });
 
     block.innerHTML = `
-        <div class='banner-1170x200-content'>
+        <div class='banner-content'>
             <div class='banner-detail' style="background-image: linear-gradient(90deg,rgba(0,0,0,0.6), rgba(0,0,0,0.1) 80%) ,url(${aempublishurl + cfReq.heroImage._dynamicUrl});">
                 <p class='pretitle'>${cfReq.pretitle}</p>
                 <p class='headline'>${cfReq.headline}</p>

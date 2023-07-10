@@ -1,4 +1,6 @@
-.banner-1170x200-content {
+
+
+.banner-content {
     position: relative;
     border: #717171 0.2px solid;
     width: 100%
@@ -8,13 +10,19 @@
 }
 
 @media (min-width: 600px) {
-    .banner-1170x200-content {
+    .banner-content {
         width: 1170px;
         height: 200px;
     }
+
+    .banner1300x435 .banner-content {
+      width: 1300px;
+      height: 435px;
+    }
+
 }
 
-.banner-1170x200-content .banner-detail {
+.banner-content .banner-detail {
     width: 865px;
     box-sizing: border-box;
     height: 200px;
@@ -26,12 +34,16 @@
   }
 
   @media (min-width: 600px) {
-    .banner-1170x200-content .banner-detail {
+    .banner-content .banner-detail {
         padding: 56px 60px 60px 60px;
     }
+
+  .banner1300x435 .banner-content .banner-detail  {
+      padding: 150px 60px 60px 60px;
+      height: 435px;
   }
 
-  .banner-1170x200-content .banner-detail .headline {
+  .banner-content .banner-detail .headline {
     font-size: 36px;
     font-weight: 900;
     line-height: 36px;
@@ -39,7 +51,12 @@
     margin: 0;
   }
 
-  .banner-1170x200-content .banner-detail .pretitle {
+  .banner1300x435 .banner-content .banner-detail .headline {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .banner-content .banner-detail .pretitle {
     font-size: 36px;
     font-weight: 400;
     line-height: 30px;
@@ -47,7 +64,12 @@
     margin: 0;
   }
 
-  .banner-1170x200-content .banner-detail .detail {
+  .banner1300x435 .banner-content .banner-detail .pretitle {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .banner-content .banner-detail .detail {
     font-size: 12px;
     text-transform: uppercase;
     opacity: 0.6;
@@ -57,12 +79,16 @@
     margin: 0;
   }
 
-  .banner-1170x200-content .banner-logo {
+  .banner1300x435 .banner-content .banner-detail .detail {
+    font-size: 18px;
+    line-height: 72px; }
+
+  .banner-content .banner-logo {
     display: none;
     }
 
   @media (min-width: 600px) {
-  .banner-1170x200-content .banner-logo {
+  .banner-content .banner-logo {
     display: block;
     width: 400px;
     background-image: url("/icons/securbank_logo.svg");

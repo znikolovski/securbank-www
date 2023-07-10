@@ -221,9 +221,17 @@ main img {
 }
 
 .icon-securbank_logo {
-  width: 100%;
-  height: 100%;
+  width: 200px;
 }
+
+@media (min-width: 600px) {
+  .icon-securbank_logo {
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
 
 main .section {
   padding: 12px 0px;

@@ -1,0 +1,56 @@
+.banner-1170x200-content {
+    position: relative;
+    border: #717171 0.2px solid;
+    width: 1170px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.banner-1170x200-content .banner-detail {
+    width: 865px;
+    box-sizing: border-box;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 56px 60px 60px 60px;
+    color: #fff;
+  }
+
+  .banner-1170x200-content .banner-detail .headline {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner-1170x200-content .banner-detail .pretitle {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner-1170x200-content .banner-detail .detail {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner-1170x200-content .banner-logo {
+    width: 400px;
+    background-image: url("/icons/securbank_logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 191px 53px;
+  }
+

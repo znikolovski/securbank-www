@@ -7,6 +7,7 @@
     height: 200px;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 .banner-content p {

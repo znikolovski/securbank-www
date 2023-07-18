@@ -1,3 +1,9 @@
+.border > div > div {
+  padding: 0 20px;
+  border: 1px solid #000;
+}
+
+
 .columns > div {
   display: flex;
   flex-direction: column;

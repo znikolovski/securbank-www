@@ -1,10 +1,7 @@
 export default function decorate(block) {
-
     const queryString = window.location.search;
     console.log(queryString);
-    
 
- 
     const content = block.querySelector('div'); 
 
     const bannercontent = document.createElement("div");
@@ -19,14 +16,14 @@ export default function decorate(block) {
     const bannerpicdiv = document.createElement("div");
     bannerpicdiv.classList.add(`banner-pic`);
     bannerpicdiv.append(bannerpic);
- 
+
 
 
     bannercontent.append(bannerpicdiv);
     bannercontent.append(bannertextdiv);
-    
+
     block.append(bannercontent);
-    
+
 
     if (queryString) {
         const urlParams = new URLSearchParams(queryString);

@@ -79,9 +79,9 @@ export default class RuleEngine {
     const element = document.getElementById(fieldId);
     if (!(element instanceof NodeList)) {
       this.data[element.name] = coerceValue(value);
-      const { displayFormat } = element.dataset;
+      // const { displayFormat } = element.dataset;
       if (element.tagName === 'OUTPUT') {
-        //const formatFn = formatFns[displayFormat] || ((x) => x);
+        // const formatFn = formatFns[displayFormat] || ((x) => x);
         element.value = (value?.toLocaleString());
         element.dataset.value = value;
       } else {

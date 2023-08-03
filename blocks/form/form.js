@@ -1,6 +1,6 @@
-import { createRange } from "./range.js";
-import { applyRuleEngine } from "./rules/index.js";
-import transformRule from "./rules/RuleCompiler.js";
+/* eslint-disable no-fallthrough */
+import { createRange } from './range.js';
+import { applyRuleEngine } from './rules/index.js';
 
 const validityKeyMsgMap = {
   typeMismatch: 'ErrorMessageInvalid',
@@ -224,7 +224,7 @@ async function createForm(formURL) {
     let fieldWrapper = createFieldWrapper(fd);
     let tmp;
     switch (fd.Type) {
-      case 'hidden': 
+      case 'hidden':
         fieldWrapper = createInput(fd);
       case 'output':
         fieldWrapper.append(createOutput(fd));
@@ -257,14 +257,14 @@ async function createForm(formURL) {
         break;
       case 'range':
         fieldWrapper.append(createRange(createInput(fd)));
-        break
+        break;
       default:
         fieldWrapper.append(createInput(fd));
         fieldWrapper.append(createErrorWrapper());
     }
 
-    if(fd.Type == 'fieldset') {
-      form.append(fieldWrapper)
+    if (fd.Type === 'fieldset') {
+      form.append(fieldWrapper);
       container = fieldWrapper;
     } else {
       container.append(fieldWrapper);
@@ -273,7 +273,6 @@ async function createForm(formURL) {
   });
 
   applyRuleEngine(json.data, {}, form);
-
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();

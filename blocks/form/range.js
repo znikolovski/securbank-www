@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 async function updateBubble(input, element, values) {
   const step = input.step || 1;
   const max = input.max || 0;
@@ -11,9 +12,9 @@ async function updateBubble(input, element, values) {
   element.setAttribute('style', style);
   const bubble = element.querySelector('.range-bubble');
   bubble.innerText = (value);
-  console.log(values);
 }
-  
+
+// eslint-disable-next-line import/prefer-default-export
 export function createRange(input) {
   const clonedInput = input.cloneNode();
 

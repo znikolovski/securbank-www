@@ -234,12 +234,12 @@ main img {
 
 
 main .section {
-  padding: 12px 0px;
+  padding: 12px 0;
 }
 
 @media (min-width: 600px) {
   main .section {
-    padding: 18px 0px;
+    padding: 18px 0;
   }
 }
 
@@ -262,6 +262,5 @@ main .section.highlight {
 
 
 main .columns-container  {
-
   background-color: #F3F2F6;
 } 

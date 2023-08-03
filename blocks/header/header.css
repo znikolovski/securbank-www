@@ -33,7 +33,7 @@ header nav[aria-expanded="true"] {
 
 @media (min-width: 600px) {
   header nav {
-    padding: 0 0;
+    padding: 0;
     margin: 16px auto;
   }
 }

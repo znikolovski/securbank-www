@@ -8,10 +8,11 @@ export default async function decorate(block) {
     .forEach((currency) => {
       const li = document.createElement('li');
       li.innerHTML = `
-      <p>${currency.title}</p>
-      <p>${currency.forex}</p>
+      <p>${currency.title} - ${currency.forex}</p>
       `;
       container.append(li);
     });
+  block.innerHTML = '';
+  block.append('Exchange Rates');
   block.append(container);
 }

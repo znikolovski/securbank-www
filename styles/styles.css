@@ -68,7 +68,7 @@ body.appear {
 }
 
 header {
-  height: calc(var(--nav-height) + 40px);
+  height: calc(var(--nav-height) + 32px);
 }
 
 h1, h2, h3,
@@ -221,17 +221,25 @@ main img {
 }
 
 .icon-securbank_logo {
-  width: 100%;
-  height: 100%;
+  width: 200px;
 }
 
+@media (min-width: 600px) {
+  .icon-securbank_logo {
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+
 main .section {
-  padding: 12px 0px;
+  padding: 12px 0;
 }
 
 @media (min-width: 600px) {
   main .section {
-    padding: 18px 0px;
+    padding: 18px 0;
   }
 }
 
@@ -254,6 +262,5 @@ main .section.highlight {
 
 
 main .columns-container  {
-
   background-color: #F3F2F6;
 } 

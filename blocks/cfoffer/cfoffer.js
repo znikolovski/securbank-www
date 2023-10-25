@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 export default async function decorate(block) {
-  const aempublishurl = 'https://publish-p55117-e571178.adobeaemcloud.com';
+  const aempublishurl = 'https://publish-p115476-e1135027.adobeaemcloud.com';
   const persistedquery = '/graphql/execute.json/securbank/OfferByPath';
   const cfpath = '/content/dam/securbank/en/offers/';
   const offerid = block.querySelector(':scope div:nth-child(1) > div').innerHTML;

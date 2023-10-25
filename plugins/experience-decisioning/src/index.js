@@ -630,9 +630,9 @@ function adjustedRumSamplingRate(checkpoint, customOptions) {
 }
 
 export async function loadEager(customOptions = {}) {
-  this.sampleRUM.always.on('audiences', adjustedRumSamplingRate('audiences', customOptions));
-  this.sampleRUM.always.on('campaign', adjustedRumSamplingRate('campaign', customOptions));
-  this.sampleRUM.always.on('experiment', adjustedRumSamplingRate('experiment', customOptions));
+  this.sampleRUM.on('audiences', adjustedRumSamplingRate('audiences', customOptions));
+  this.sampleRUM.on('campaign', adjustedRumSamplingRate('campaign', customOptions));
+  this.sampleRUM.on('experiment', adjustedRumSamplingRate('experiment', customOptions));
   let res = await runCampaign.call(this, customOptions);
   if (!res) {
     res = await runExperiment.call(this, customOptions);

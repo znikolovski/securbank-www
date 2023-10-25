@@ -1,7 +1,6 @@
 import {
   sampleRUM,
   buildBlock,
-  getMetadata,
   loadHeader,
   loadFooter,
   decorateButtons,
@@ -12,6 +11,9 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  getMetadata,
+  loadScript,
+  toCamelCase,
   toClassName,
 } from './lib-franklin.js';
 
@@ -19,7 +21,9 @@ const pluginContext = {
   getAllMetadata,
   getMetadata,
   loadCSS,
+  loadScript,
   sampleRUM,
+  toCamelCase,
   toClassName,
 };
 

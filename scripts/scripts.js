@@ -103,14 +103,25 @@ export function createTag(tag, attributes, children) {
 }
 
 function buildHeroBlock(main) {
-  const h1 = main.querySelector('main > div > h1');
-  const picture = main.querySelector('main > div > p > picture');
+  // const h1 = main.querySelector('main > div > h1');
+  // const picture = main.querySelector('main > div > p > picture');
+  // // eslint-disable-next-line no-bitwise
+  // if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
+  //   const bgP = picture.closest('p');
+  //   cloneAttributes(picture, bgP);
+  //   const section = document.createElement('div');
+  //   section.append(buildBlock('hero', { elems: [picture, h1] }));
+  //   main.prepend(section);
+  // }
+  const h1 = main.querySelector('h1');
+  const h2 = main.querySelector('h2');
+  const p1 = main.querySelector('h2+p');
+  const p2 = main.querySelector('h2+p+p');
+  const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
   if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
-    const bgP = picture.closest('p');
-    cloneAttributes(picture, bgP);
     const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [picture, h1] }));
+    section.append(buildBlock('hero', { elems: [picture, h1, h2, p1, p2] }));
     main.prepend(section);
   }
 }

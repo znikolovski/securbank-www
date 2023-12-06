@@ -115,13 +115,12 @@ function buildHeroBlock(main) {
   // }
   const h1 = main.querySelector('h1');
   const h2 = main.querySelector('h2');
-  const p1 = main.querySelector('h2+p');
-  const p2 = main.querySelector('h2+p+p');
+  
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
   if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
     const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [picture, h1, h2, p1, p2] }));
+    section.append(buildBlock('hero', { elems: [picture, h1, h2] }));
     main.prepend(section);
   }
 }

@@ -35,6 +35,6 @@
           ],
           "url": "https://fieldenablement-22012402.testdrive.workfront.com/project/65c4382d00820ede4d26e25526d9478d/tasks",
           "includePaths": [ "**.docx**" ]
-        },
+        }
     ]
 }
